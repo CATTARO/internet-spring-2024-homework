@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>好樂團GoodBand</title>
+    <meta name="description" content="台東大學網頁設計作業">
+    <meta name="keywords" content="好樂團,GoodBand">
+    <meta name="author" content="朱廷諺">
+    <link rel="stylesheet" href="https://s.mzstatic.com/fonts/fonts.css">
+
+    <style>
+        body {
+            background-image: url('https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/393194249_879296046890086_4722737193096420475_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lS7zQk7JRhQAb6f6-nJ&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAVDH9sND_dQeME5Vt6r4bWAraMIDwB30D8esspcL3wlQ&oe=661C7E8B');
+            font-family: 'Arial', sans-serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: Lightsalmon;
+            background-size: contain;
+            font-size: xx-large;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 5px black;
+        }
+
+        .band-info, .members, .albums, .music-videos, .links {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .band-info h2, .members h2, .albums h2, .music-videos h2, .links h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        table th, table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .top {
+            position: fixed;
+            right: 55px;
+            bottom: 55px;
+            opacity: 0.7;
+            transition: 1s;
+        }
+
+        .top:hover {
+            opacity: 1;
+            transition: 0s;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .links ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .links img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        caption {
+            color: black;
+            text-align: left;
+            font-size: 30px;
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>好樂團GoodBand</h1>
+    </header>
+
+    <section class="band-info">
+        <h2>樂團資訊</h2>
+        <ul>
+            <li>樂團名：好樂團</li>
+            <li>英文名：GoodBand</li>
+            <li>音樂類型：華語流行音樂、獨立流行樂</li>
+            <li>出道地點：<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/22px-Flag_of_the_Republic_of_China.svg.png" alt="國旗">臺灣</li>
+            <li>唱片公司：禾廣娛樂股份有限公司</li>
+        </ul>
+    </section>
+
+    <section class="members">
+        <h2>成員</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>樂團位置</th>
+                <th>成員本名</th>
+                <th>個人網站</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>主唱</td>
+                <td>許瓊文</td>
+                <td><a href="https://ninjawenwen.cargo.site/" target="_blank">ninjawenwen</a></td>
+            </tr>
+            <tr>
+                <td>吉他手</td>
+                <td>張子慶</td>
+                <td><a href="https://www.instagram.com/ching0104yaya/" target="_blank">ching0104yaya</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <br><br>
+    <table border="1" cellspacing="0">
+        <caption>音樂作品<hr></caption>
+        <tr>
+            <th>發表時間</th>
+            <th>專輯</th>
+            <th>歌名</th>
+        </tr>
+        <tr>
+            <td rowspan="3">2016年8月3日</td>
+            <td rowspan="3">《我把我的青春給你》</td>
+            <td>一直走</td>
+        </tr>
+        <tr>
+            <td>出口</td>
+        </tr>
+        <tr>
+            <td>我把我的青春給你</td>
+        </tr>
+        <tr>
+            <td rowspan="4">2018年4月3日</td>
+            <td rowspan="4">《把悲傷留在這裡》</td>
+            <td>或許我們都忘了最初說過的話</td>
+        </tr>
+        <tr>
+            <td>蒸發</td>
+        </tr>
+        <tr>
+            <td>我們一樣可惜</td>
+        </tr>
+        <tr>
+            <td>我很好</td>
+        </tr>
+        <tr>
+            <td rowspan="5">2019年7月</td>
+            <td rowspan="5">《至少我想感同你的身受》</td>
+            <td>我愛你，卻不能拯救你</td>
+        </tr>
+        <tr>
+            <td>被愛灌溉長大的人</td>
+        </tr>
+        <tr>
+            <td>我會記得你</td>
+        </tr>
+        <tr>
+            <td>陪你的貓睡午覺</td>
+        </tr>
+        <tr>
+            <td>我把我的青春給你（acoustic）</td>
+        </tr>
+        <tr>
+            <td>2019年10月</td>
+            <td>《反正存不了錢，那就再買一件》</td>
+            <td>反正存不了錢，那就再買一件</td>
+        </tr>
+        <tr>
+            <td>2020年7月</td>
+            <td>《他們說我是沒有用的年輕人》</td>
+            <td>他們說我是沒有用的年輕人</td>
+        </tr>
+        <tr>
+            <td>2020年12月</td>
+            <td>《棲身之地》</td>
+            <td>棲身之地</td>
+        </tr>
+        <tr>
+            <td rowspan="10">2022年11月</td>
+            <td rowspan="10">《在遊蕩的路上學會寬容》</td>
+            <td>車站</td>
+        </tr>
+        <tr>
+            <td>蒸發</td>
+        </tr>
+        <tr>
+            <td>淹沒我</td>
+        </tr>
+        <tr>
+            <td>他們說我是沒有用的年輕人</td>
+        </tr>
+        <tr>
+            <td>能不能請你別把我丟下</td>
+        </tr>
+        <tr>
+            <td>遊蕩的人(feat.李玖哲 Nicky Lee)</td>
+        </tr>
+        <tr>
+            <td>送給你的</td>
+        </tr>
+        <tr>
+            <td>被愛灌溉長大的人</td>
+        </tr>
+        <tr>
+            <td>棲身之地</td>
+        </tr>
+        <tr>
+            <td>回到木星</td>
+        </tr>
+    </table>
+    <br><br>
+    <table class="mv">
+        <caption>Music Video<hr></caption>
+        <tbody>
+        <tr>
+            <td><a href="https://www.youtube.com/watch?v=9MMIB61e6sM" target="_blank" title="我把我的青春給你"><img src="http://img.youtube.com/vi/9MMIB61e6sM/sddefault.jpg" alt="我把我的青春給你"></a></td>
+            <td><a href="https://www.youtube.com/watch?v=FNJG6MsKO0k" target="_blank" title="他們說我是沒有用的年輕人"><img src="http://img.youtube.com/vi/FNJG6MsKO0k/sddefault.jpg" alt="他們說我是沒有用的年輕人"></a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.youtube.com/watch?v=zGrYK1VTIjs" target="_blank" title="我們一樣可惜"><img src="http://img.youtube.com/vi/zGrYK1VTIjs/sddefault.jpg" alt="我們一樣可惜"></a></td>
+            <td><a href="https://www.youtube.com/watch?v=EPb4zjEjPvM" target="_blank" title="遊蕩的人"><img src="http://img.youtube.com/vi/EPb4zjEjPvM/sddefault.jpg" alt="我們一樣可惜"></a></td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <table border="0" class="links">
+        <caption>連結 Links<hr></caption>
+        <tr>
+            <td>
+                <ol>
+                    <li><a href="https://www.facebook.com/verygoodband" target="_blank" style="text-decoration:none;color:#3b5998"><img src="https://www.gstatic.com/kpui/social/fb_32x32.png" alt="Facebook" style="vertical-align:middle;">Facebook粉絲團</a></li>
+                    <li><a href="https://www.youtube.com/@goodband2015" target="_blank" style="text-decoration:none;color:#ee0000"><img src="https://lh3.googleusercontent.com/Ned_Tu_ge6GgJZ_lIO_5mieIEmjDpq9kfgD05wapmvzcInvT4qQMxhxq_hEazf8ZsqA=w300" width="32px" height="32px" alt="Youtube" style="vertical-align:middle;">好樂團 GoodBand</a></li>
+                    <li><a href="https://open.spotify.com/artist/4xlAHgZnzzPHtoKnev0gwJ" target="_blank" style="text-decoration:none;color:#32CD32"><img src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTGVLfQUI48k8KKCMwUjD3KyEUROiRSiLzDmmf8hgtwe8HzSO843p2fwuWlPYudjeGnfYWVJ1bYp1hF2CxSRlsNOqLyb4G7wl4aBDBXsG0LP5Og_rEr" width="32px" height="32px" alt="Spotify" style="vertical-align:middle;">好樂團|Spotify</a></li>
+                    <li><a href="https://www.instagram.com/goodband2015/" target="_blank" style="text-decoration:none;color:#FF8C00"><img src="https://th.bing.com/th/id/OIP.asShiFP8ONgAnPUC-WLY4gAAAA?w=150&h=150&rs=1&pid=ImgDetMain" width="32px" height="32px" alt="Youtube" style="vertical-align:middle;">goodband2015</a></li>
+                    <li><a href="https://zh.wikipedia.org/zh-tw/%E5%A5%BD%E6%A8%82%E5%9C%98" target="_blank" style="text-decoration:none;color:black"><img src="https://zh.wikipedia.org/static/favicon/wikipedia.ico" width="32px" height="32px" alt="Wiki" style="vertical-align:middle;">維基百科</a></li>
+                    <li><a href="https://www.google.com.tw/search?q=%E5%A5%BD%E6%A8%82%E5%9C%98&sca_esv=6480816f92634337&source=hp&ei=cLYWZpLeBqCXvr0PhPCz0AE&iflsig=ANes7DEAAAAAZhbEgBgkLE2TpTvoAQDqn9d4qeYv4CcB&ved=0ahUKEwiS1qCKgbiFAxWgi68BHQT4DBoQ4dUDCA8&uact=5&oq=%E5%A5%BD%E6%A8%82%E5%9C%98&gs_lp=Egdnd3Mtd2l6Ignlpb3mqILlnJgyBRAuGIAEMgUQABiABDIEEAAYAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIgARQAFgAcAB4AJABAJgBKaABKaoBATG4AQPIAQD4AQL4AQGYAgGgAi2YAwCSBwExoAfnBQ&sclient=gws-wiz" target="_blank" style="text-decoration:none;color:#4285f4"><img src="https://lh3.googleusercontent.com/DKoidc0T3T1KvYC2stChcX9zwmjKj1pgmg3hXzGBDQXM8RG_7JjgiuS0CLOh8DUa7as=w300" width="32px" height="32px" alt="Google" style="vertical-align:middle;">Google 搜尋</a></li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+    <a href="#top" class="top" title="回到上面"><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/72x72/2b06.png" alt="Top"></a>
+</div>
+<script>
+    var 背景 = ['https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/393194249_879296046890086_4722737193096420475_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lS7zQk7JRhQAb6f6-nJ&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAVDH9sND_dQeME5Vt6r4bWAraMIDwB30D8esspcL3wlQ&oe=661C7E8B', 'https://storywriter.tokyo/wp-content/uploads/2023/02/GoodBand%E3%82%A2%E3%83%BC%E5%86%99%EF%BC%91-scaled.jpg', 'https://www.cmmedia.com.tw/file/42560/1604051692_100097_main_DSC_4480-1-1.jpg', 'https://storage.googleapis.com/www-cheers-com-tw/article/202212/article-63ae99146635a.jpg', 'https://www.niusnews.com/upload/imgs/default/2020Sep_JENNNNNNN/09china/100.jpg'];
+    setInterval(function () {
+        document.body.style.backgroundImage = 'url(\'' + 背景[Math.floor(Math.random() * 背景.length)] + '\')';
+    }, 3000);
+</script>
+</body>
+</html>
